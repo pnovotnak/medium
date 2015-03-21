@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" ng-app="mediumApp">
+
+  <head>
+    <title>Medium</title>
+  </head>
+  
+  <body>
+
+    <div class="feed video">
+
+    </div>
+
+    <div class="gamepads" ng-controller="GamepadConfigCtrl">
+      <div class="gamepad" ng-repeat="gamepad in gamepads">
+        <div class="settings">
+        </div>
+        <div class="feed controls axes" ng-repeat="axis in gamepad.axes">
+          <label>Axis {{ $index }}
+            <progress name="" max=2 value={{ axis }}></progress></label>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="/js/jquery/2.1.3.min.js"></script>
+  <script src="/js/controllers.js"></script>
+  <script src="/js/angular/1.3.15.min.js"></script>
+  <script src="/js/gamepad.js"></script>
+
+</html>
