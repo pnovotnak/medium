@@ -7,3 +7,7 @@ Control Robit With Computer
 - Allow user to control robit with joystick or gamepad
 - Allow user to see what robit sees
 
+## Limitations
+
+- Currently only FireFox is supported
+
